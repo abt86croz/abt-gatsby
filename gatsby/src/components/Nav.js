@@ -1,6 +1,8 @@
-import { Link } from 'gatsby';
+import { Link, graphql, useStaticQuery } from 'gatsby';
 import React from 'react';
 import styled from 'styled-components';
+import PoliciesPDF from './PoliciesPDF';
+import SchedulePDF from './SchedulePDF';
 
 const StyledNav = styled.nav`
   ul {
@@ -13,6 +15,9 @@ export default function Nav() {
   return (
     <StyledNav>
       <ul>
+        <li>
+          <PoliciesPDF />
+        </li>
         <li>
           <Link to="/about">About</Link>
         </li>
@@ -27,6 +32,9 @@ export default function Nav() {
         </li>
         <li>
           <Link to="/">Home</Link>
+        </li>
+        <li>
+          <SchedulePDF />
         </li>
       </ul>
       {/* remove this */}
