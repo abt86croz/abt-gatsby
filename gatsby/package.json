@@ -23,6 +23,7 @@
     }
   },
   "dependencies": {
+    "@browniebroke/gatsby-image-gallery": "^4.0.2",
     "@sanity/block-content-to-react": "^2.0.7",
     "babel-plugin-styled-components": "^1.11.1",
     "dotenv": "^8.2.0",

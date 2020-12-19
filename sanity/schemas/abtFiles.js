@@ -10,7 +10,7 @@ export default {
       name: 'title',
       type: 'string',
       title: 'File Tile',
-      validation: (Rule) => Rule.required(),
+      validation: (Rule) => Rule.required().uppercase(),
     },
     {
       name: 'file',

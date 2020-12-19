@@ -10,7 +10,7 @@ export default function PoliciesPDF() {
   // statically query when not at page level
   const { policies } = useStaticQuery(graphql`
     query {
-      policies: allSanityAbtFiles(filter: { title: { eq: "Policies" } }) {
+      policies: allSanityAbtFiles(filter: { title: { eq: "POLICIES" } }) {
         nodes {
           title
           file {

@@ -10,7 +10,7 @@ export default function SchedulePDF() {
   // statically query when not at page level
   const { schedule } = useStaticQuery(graphql`
     query {
-      schedule: allSanityAbtFiles(filter: { title: { eq: "Schedule" } }) {
+      schedule: allSanityAbtFiles(filter: { title: { eq: "SCHEDULE" } }) {
         nodes {
           title
           file {

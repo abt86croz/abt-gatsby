@@ -1,4 +1,4 @@
-import { Link, graphql, useStaticQuery } from 'gatsby';
+import { Link } from 'gatsby';
 import React from 'react';
 import styled from 'styled-components';
 import PoliciesPDF from './PoliciesPDF';
@@ -32,6 +32,9 @@ export default function Nav() {
         </li>
         <li>
           <Link to="/">Home</Link>
+        </li>
+        <li>
+          <Link to="/photos">Photos</Link>
         </li>
         <li>
           <SchedulePDF />
