@@ -14,7 +14,7 @@ const StyledImageContainer = styled.div`
 `;
 
 export default function Photos({ data }) {
-  const images = data.photos?.node?.map(({ image, name }) => ({
+  const images = data.photos?.nodes?.map(({ image, name }) => ({
     ...image.asset,
     caption: name,
     thumbAlt: name,
