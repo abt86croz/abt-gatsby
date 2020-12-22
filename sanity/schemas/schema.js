@@ -8,6 +8,7 @@ import post from './post';
 import abtFiles from './abtFiles';
 import photos from './photos';
 import calendar from './calendar';
+import tables from './tables';
 import maps from './maps';
 import map from './objects/map';
 
@@ -25,5 +26,6 @@ export default createSchema({
     calendar,
     maps,
     map,
+    tables,
   ]),
 });

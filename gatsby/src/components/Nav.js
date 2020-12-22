@@ -22,6 +22,9 @@ export default function Nav() {
           <Link to="/about">About</Link>
         </li>
         <li>
+          <Link to="/tuition">Tuition</Link>
+        </li>
+        <li>
           <Link to="/contact">Contact</Link>
         </li>
         <li>
