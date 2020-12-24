@@ -16,21 +16,21 @@ export default function GoogleCalendar() {
   if (!calendar.nodes.length) return null;
 
   const title = calendar.nodes[0]?.Title;
+  const url = calendar.nodes[0]?.URL;
+
+  const decodedURL = decodeURIComponent(
+    encodeURIComponent(url.replace(/&amp;/g, '&'))
+  );
 
   return (
     <>
-      <div>
-        {calendar.nodes.map((node) => (
-          <iframe
-            src={node.URL}
-            id="test"
-            title={node.Title}
-            width="100%"
-            height="1000px"
-            async
-          />
-        ))}
-      </div>
+      <iframe
+        src={decodedURL}
+        title={title}
+        width="100%"
+        height="1000px"
+        async
+      />
     </>
   );
 }

@@ -26,7 +26,6 @@ export default function GoogleMaps() {
         height="450px"
         display="initial"
         position="relative"
-        injectScript
         title={title}
       />
     </>
